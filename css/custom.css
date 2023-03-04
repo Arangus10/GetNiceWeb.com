@@ -1,0 +1,39 @@
+body {
+  padding-top: 56px;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  stroke-width: 1;
+}
+
+.services-icon {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.quote-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+i {
+  margin: 20px;
+  font-size: 40px;
+  color:rgb(82,139,3);
+  
+}
+.navbar-light .navbar-brand {
+  font-family: Marhey;
+  font-size: 1.6rem;
+  color:rgb(49,83,3);
+}
