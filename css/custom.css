@@ -1,3 +1,8 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
 body {
   padding-top: 56px;
 }
@@ -5,6 +10,9 @@ body {
 section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.hero p {
+  font-weight: bold;
 }
 
 .lnr {
@@ -26,14 +34,20 @@ section {
   margin-bottom: 20px;
 }
 
-i {
-  margin: 20px;
-  font-size: 40px;
-  color:rgb(82,139,3);
-  
-}
 .navbar-light .navbar-brand {
-  font-family: Marhey;
+  font-family: Comfortaa;
   font-size: 1.6rem;
+  line-height:1;
   color:rgb(49,83,3);
+}
+.fa-pagelines {
+  margin: 5px;
+  font-size: 45px;
+  color:rgb(82,139,3);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
