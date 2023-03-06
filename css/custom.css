@@ -1,8 +1,9 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
-
-
+html {
+	scroll-behavior: smooth;
+}
 body {
   padding-top: 56px;
 }
@@ -13,6 +14,8 @@ section {
 }
 .hero p {
   font-weight: bold;
+  font-size: 2vw;
+  font-family: Comfortaa;
 }
 
 .lnr {
@@ -40,14 +43,12 @@ section {
   line-height:1;
   color:rgb(49,83,3);
 }
-.fa-pagelines {
-  margin: 5px;
-  font-size: 45px;
-  color:rgb(82,139,3);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+nav img {
+  margin: 2px;
 }
+footer h5, h2 {
+  font-family: Comfortaa; ;
+}
+.colorful .card-body {
+  margin-top: 30px;
+} 
