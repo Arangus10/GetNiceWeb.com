@@ -11,7 +11,7 @@ require('src/vendor/autoload.php');
 $from = 'Demo contact form <demo@domain.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <jarek@indeex.co.uk>';
+$sendTo = 'Demo contact form <bartosz1miastkowski@gmail.com>';
 
 // subject of the email
 $subject = 'New message from contact form';
