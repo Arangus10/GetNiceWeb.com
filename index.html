@@ -34,18 +34,21 @@
 
     <!-- navbar-->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-lg bg-white">
-      <img 
-        class="fa-brands fa-pagelines" 
-        src="assets/ico/pagelines-left.png" 
-        width="30px" 
-        height="42px" 
-        alt="icon plant"
-      >
-      <a href="index.html" class="navbar-brand">get<br>nice<br>web</a>
+      <div class="row offset-5 offset-md-0">
+        <div class="d-flex align-items-center">
+          <img 
+          class="fa-brands fa-pagelines" 
+          src="assets/ico/pagelines-left.png" 
+          width="30px" 
+          height="42px" 
+          alt="icon plant"
+          >
+        </div>
+        <a href="index.html" class="navbar-brand">get<br>nice<br>web</a>
+      </div>
       <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
@@ -58,7 +61,7 @@
     <section class="hero bg-white">
       <div class="container">
         <div class="row"> 
-          <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="col-md-6 d-flex justify-content-center align-items-center animated animatedFadeInUp fadeInUp">
             <p class="lead">Here you can get a nice website <br>at an affordable price <br>with satisfaction guaranteed</p>
             <!--<p><a href="#" class="btn btn-primary shadow mr-2">Discover More</a><a href="#" class="btn btn-outline-primary">Some another action</a></p>-->
           </div>
@@ -109,8 +112,9 @@
     <!-- Portfolio-->
     <section class="bg-light">
       <div class="container">
-        <h2>Portfolio</h2>
-        <p class="lead text-muted mb-5">In enim non sit irure ut adipisicing laboris et laborum.</p>
+        <div class="animated animatedFadeInUp fadeInUp">
+          <h2>Portfolio</h2>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card colorful shadow border-0 h-100">
@@ -215,7 +219,9 @@
         <!-- Services-->
         <section>
           <div class="container"> 
-            <h2>Services</h2>
+            <div class="animated animatedFadeInUp fadeInUp">
+              <h2>Services</h2>
+            </div>
             <p class="text-muted mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
             <div class="row">
               <div class="col-sm-6 col-lg-4 mb-3">
@@ -279,18 +285,85 @@
       </div>
     </section>
 
+    <!--Contact-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 py-5">                         
+            <form id="contact-form" method="post" action="contact.php">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6 py-2">
+                    <div class="form-group">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="First name *"  autocomplete="on" required="required" data-error="First name is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                    <div class="col-md-6 py-2">
+                      <div class="form-group">
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last name"  autocomplete="on">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 py-2">
+                        <div class="form-group">
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone number *"  autocomplete="on" required="required" data-error="Phone number is required">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-2">
+                        <div class="form-group">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="E-mail"  autocomplete="on">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 py-2">
+                    <div class="form-group">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="How can we help You? *" rows="4"  autocomplete="on" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <div class="g-recaptcha justify-content-center" data-sitekey="6Ld2O44kAAAAAPlVmxT7vD1pnSjrLkrNHGizGCiZ" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="py-2 d-flex justify-content-center">
+                  <input type="submit" class="btn-send" value="Send">
+                </div>
+                <div class="row">
+                  <div class="col-md-12 py-2">
+                    <p class="text-muted">
+                      <strong>*</strong> These fields are required.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer-->
-    <footer class="py-5 bg-light" id="contact">
+    <!--<footer class="py-5 bg-light" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0 animated animatedFadeInUp fadeInUp">
             <h5>get nice web</h5>
             <ul class="contact-info list-unstyled">
-              <li><a href="mailto:sales@landy.com" class="text-dark">contact@getniceweb.com</a></li>
+              <li><a href="mailto:contact@getniceweb.com" class="text-dark">contact@getniceweb.com</a></li>
               <li><a href="tel:123456789" class="text-dark">+48 123 456 789</a></li>
             </ul>
-            <!--<p class="text-muted">Laborum aute enim consectetur eu laboris commodo.</p>-->
-          </div>
+          </div>-->
+
           <!--<div class="col-lg-4 col-md-6">
             <h5>Pages</h5>
             <ul class="links list-unstyled">
